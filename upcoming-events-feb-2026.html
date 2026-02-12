@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming events</title>
+  <style>
+    :root {
+      --zapier-orange: #FF4A00;
+      --zapier-blue: #201515;
+      --bg: #f8f7f5;
+      --card-bg: #fff;
+      --text: #201515;
+      --text-muted: #5c5c5c;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+      padding: 1.5rem;
+    }
+    header {
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 3px solid var(--zapier-orange);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--zapier-blue);
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+    }
+    .event-card {
+      background: var(--card-bg);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      border-left: 4px solid var(--zapier-orange);
+    }
+    .event-card h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--zapier-blue);
+    }
+    .event-card .date {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .event-card .status {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--zapier-orange);
+      font-weight: 600;
+    }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    footer p {
+      margin: 0.25rem 0;
+    }
+    @media (min-width: 600px) {
+      body { padding: 2rem; }
+      header h1 { font-size: 2rem; }
+      .event-card { padding: 1.5rem 1.75rem; }
+      .event-card h2 { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Upcoming events</h1>
+  </header>
+  <main>
+    <section class="event-card" aria-label="Event: Vertical Exec Ops HR AMA">
+      <h2>Vertical: Exec Ops/HR AMA</h2>
+      <p class="date">Feb 12–13, 2026</p>
+      <span class="status">Confirmed</span>
+    </section>
+    <section class="event-card" aria-label="Event: Make Time for AI Launch">
+      <h2>Make Time for AI Launch</h2>
+      <p class="date">Feb 24–25, 2026</p>
+      <span class="status">Confirmed</span>
+    </section>
+  </main>
+  <footer>
+    <p>Source: Workshops calendar</p>
+    <p>Generated Feb 12, 2026</p>
+  </footer>
+</body>
+</html>
